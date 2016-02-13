@@ -1,7 +1,7 @@
 Meteor.subscribe("allEvents");
 
-Template.body.helpers({
-  events() {
+Template.app.helpers({
+  nbEvents() {
     return Event.find().count();
   },
 })
